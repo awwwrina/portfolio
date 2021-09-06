@@ -5,16 +5,32 @@
     &_fz14 {
         font-size: 14px;
         line-height: 21px;
-
     }
     &_fz16 {
         font-size: 16px;
         line-height: 24px;
     }
+    &_fz20 {
+        font-size: 20px;
+        line-height: 30px;
+    }
     &_fz48 {
         font-size: 48px;
     }
-    &_margin5px {
+    &_mt5px {
         margin-top: 5px;
+    }
+    &_title {
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        &:before {
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &_subtitle {
+        text-align: center;
     }
 }
