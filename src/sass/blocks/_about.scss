@@ -1,12 +1,12 @@
 .about {
-    height: 840px;
+    padding-top: 120px;
     .container {
         display: grid;
         grid-template-columns: 400px 570px;
         grid-template-rows: 245px 315px;
         grid-column-gap: 70px;
         grid-row-gap: 40px;
-        margin-top: 120px;
+        justify-content: center;
     }
     &__title  {
         position: relative;

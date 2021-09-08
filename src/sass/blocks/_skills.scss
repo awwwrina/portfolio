@@ -37,7 +37,6 @@
         margin-top: 15px;
     }
     &__ratings {
-        margin-bottom: 126px;
         display: grid;
         grid-template: repeat(2, minmax(70px, auto)) / repeat(3, 350px);
         column-gap: 45px;
