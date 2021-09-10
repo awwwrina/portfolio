@@ -20,7 +20,7 @@
     &_mt5px {
         margin-top: 5px;
     }
-    &_title {
+    &__title {
         position: relative;
         text-align: center;
         @include before_circle;
@@ -30,7 +30,7 @@
             transform: translateX(-50%);
         }
     }
-    &_subtitle {
+    &__subtitle {
         text-align: center;
     }
 }
