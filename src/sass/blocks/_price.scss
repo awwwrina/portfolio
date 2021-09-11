@@ -3,7 +3,7 @@
     &__wrapper {
         margin-top: 60px;
         display: grid;
-        grid-template:  repeat(3, 44px) / repeat(2, 366px);
+        grid-template:  repeat(3, auto) / repeat(2, 366px);
         gap: 15px 302px;
         justify-content:center;
     }
