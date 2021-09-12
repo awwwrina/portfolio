@@ -58,10 +58,48 @@
             column-gap: 70px;
         }
     }
+    .contacts {
+        .container {
+            grid-column-gap: 30px;
+            grid-template-columns: 400px 530px;
+        }
+        &__form {
+            grid-template-rows: repeat(2, 45px) 190px auto;
+            grid-template-columns: minmax(300px,500px);
+        }
+        &__textarea {
+            grid-column: 1 / 2;    
+        }
+        &__input {
+            &_name {
+                grid-row: 1 / 2;
+            }
+            &_email {
+                grid-row: 2 / 3;
+            }
+        }
+        &__triggers {
+            grid-row: 4 / 5;
+            min-height: 80px;
+            grid-template: repeat(2,auto) / minmax(200px,300px);
+            gap: 10px;
+        }
+        &__policy {
+            grid-row: 1 / 2;
+        }
+        &__btn {
+            grid-row: 2 / 3;
+        }
+
+    }
 }
 @media (max-width: 992px) {
     .container {
         max-width: 720px;
+    }
+    .title__subtitle {
+        font-size: 24px;
+        line-height: 36px;
     }
     .about {
         .container {
@@ -109,6 +147,17 @@
     .price {
         &__wrapper {
             grid-template-columns: 366px;
+        }
+    }
+    .contacts {
+        .container {
+            grid-template-columns: repeat(2, 345px);
+        }
+        &__subtitle {
+            text-align: left;
+        }
+        &__form {
+            grid-template-rows: repeat(2,45px) 100px auto;
         }
     }
 }
@@ -160,7 +209,17 @@
     }
     .skills {
         padding-top: 46px;
-
+    }
+    .contacts {
+        .container {
+            grid-template-columns: minmax(300px,auto);
+        }
+        &__myphoto {
+            display: none;
+        }
+        &__triggers {
+        justify-content: center;
+        }
     }
 }
 @media (max-width: 576px) {
@@ -227,4 +286,5 @@
             grid-template-columns: 300px;
         }
     }
+
 }
